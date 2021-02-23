@@ -1,5 +1,7 @@
 /*Menu*/
-body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
-  }
+.bg-dark{
+    background-color:#000000 !important
+    }
+.bg-primary{
+    background-color:#343a40!important
+}
