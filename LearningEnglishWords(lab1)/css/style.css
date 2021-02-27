@@ -10,3 +10,7 @@ body{
 .navbar-brand{
     font-size: 1.4em;
 }
+
+.img-header{
+    width: 100%;
+}
