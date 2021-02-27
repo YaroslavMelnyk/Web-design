@@ -1,7 +1,12 @@
+body{
+    background-color: rgb(134, 231, 255);
+}
+
 /*Menu*/
-.bg-dark{
-    background-color:#000000 !important
-    }
-.bg-primary{
-    background-color:#343a40!important
+.navbar{
+    font-size: 1.2rem;
+}
+
+.navbar-brand{
+    font-size: 1.4em;
 }
