@@ -8,11 +8,11 @@ body{
 
 /*Menu*/
 .navbar{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .navbar-brand{
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 head{
@@ -33,7 +33,7 @@ head{
 }
 
 .card-learning{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 a{
@@ -44,6 +44,10 @@ a:hover{
     color: rgb(255, 193, 79);
 }
 
-/*a:visited{
+a:visited{
     color: yellowgreen;
+}
+
+/*footer{
+    display: none;
 }*/
