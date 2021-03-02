@@ -4,6 +4,7 @@ body{
     background-size: cover;
     color: white;
     font-size: 1.2rem;
+    height: 100%;
 }
 
 /*Menu*/
@@ -32,7 +33,7 @@ head{
     font-size: 2.9rem;
 }
 
-.card-learning{
+.block-opacity{
     opacity: 0.9;
 }
 
@@ -51,3 +52,10 @@ a:visited{
 /*footer{
     display: none;
 }*/
+
+.reg-container{
+    height: 100%;
+}
+form{
+    font-size: larger;
+}
