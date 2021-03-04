@@ -62,3 +62,13 @@ a:visited{
 form{
     font-size: larger;
 }
+
+.container-profile{
+    font-size: 1.1rem;
+}
+hr {
+    margin-top: 0rem;
+    margin-bottom: 0.6rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }

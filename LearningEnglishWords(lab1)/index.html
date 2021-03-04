@@ -19,7 +19,7 @@
     
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand pr-2" href="#">Learning English Words</a>
+        <a class="navbar-brand pr-1" href="#">Learning English Words</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,29 +28,35 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
   
           <ul class="navbar-nav mr-lg-auto">
-            <li class="nav-item active pr-1">
-              <a class="nav-link" href="index.html">Головна</a>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">
+                Головна
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-dark" href="index.html#aboutApp">Про додаток</a>
+                <a class="dropdown-item text-dark" href="index.html#instructionApp">Інструкція</a>
             </li>
-            <li class="nav-item  pr-1">
+            <li class="nav-item">
               <a class="nav-link" href="learning.html">Вивчення слів</a>
             </li>
-            <li class="nav-item pr-1">
+            <li class="nav-item">
               <a class="nav-link" href="testing.html">Тестування</a>
             </li>
           </ul>
 
           <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-              <a class="nav-link" href="register.html">Зареструватися</a>
+              <a class="nav-link" href="signup.html">Зареструватися</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">|</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="singin.html">Увійти</a>
+              <a class="nav-link" href="signin.html">Увійти</a>
             </li>
-            <li class="nav-item pl-2">
-              <a class="nav-link" href="#">Профіль</a>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="profile.html">Профіль</a>
             </li>
           </ul>
 
@@ -66,54 +72,60 @@
 
     <main>
         <div class="container p-2">
-            <div class="card text-justify mb-3 border-0 bg-transparent mb-5">
-                <div class="row no-gutters">
-                    <div class="col-lg-8">
-                        <img src="Images/11.webp" width="100%">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card-body ">
-                            <h3 class="card-title">Про додаток</h3>
-                            <p class="card-text">
-                                В нашому додатку Ви зможете вивчити слова з англійської мови. Якщо Ви зареструєтеся, 
-                                отримаєте можливість переглядати списки вже вивчених слів, а також слів, які Ви вчите зараз.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <a name="aboutApp">
+          <div class="card text-justify mb-3 border-0 bg-transparent mb-5">
+              <div class="row no-gutters">
+                  <div class="col-lg-8">
+                      <img src="Images/11.webp" width="100%">
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="card-body ">
+                          <h3 class="card-title">Про додаток</h3>
+                          <p class="card-text">
+                              В нашому додатку Ви зможете вивчити слова з англійської мови. Якщо Ви зареструєтеся, 
+                              отримаєте можливість переглядати списки вже вивчених слів, а також слів, які Ви вчите зараз.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-            <div class="card lg-3 border-0 bg-transparent">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <div class="card-body text-justify">
-                            <h3 class="card-title">Інструкція</h2>
-                            <p class="card-text">
-                                Щоб почати вивчення слів натисніть <a href="learning.html">тут</a> 
-                                або перейдіть на вкладку "Вивчення слів"
-                            </p>
-                            <p class="card-text">
-                                Щоб пройти тестування натисніть <a href="learning.html">тут</a> 
-                                або перейдіть на вкладку "Тестування"
-                            </p>
-                            <p class="font-weight-bold">УВАГА!!!</p>
-                            <p class="card-text"> Щоб пройти тестування на знання слів, потрібно додати слова в список для перевірки 
-                                на вкладці "Вивчення слів".
-                            </p>
-                            <p class="card-text">
-                                Щоб додати слово в список для перевірки, потрібно на картці з цим словом натиснути кнопку "В список для перевірки"
-                            </p>
-                            <p class="card-text">
-                                В список "Вивчені слова" слова додаються тільки тоді, коли Ви пройшли тестування.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="mt-5" src="Images/manual-book-13716287.jpg" width="100%">
-                    </div>
-                </div>
-            </div>
-        </div>
+          <div class="card lg-3 border-0 bg-transparent">
+            <a name="instructionApp">
+              <div class="row no-gutters">
+                  <div class="col-lg-6">
+                      <div class="card-body text-justify">
+                          <h3 class="card-title">Інструкція</h2>
+                          <p class="card-text">
+                            Щоб почати вивчення слів натисніть <a href="learning.html">тут</a> 
+                            або перейдіть на вкладку "Вивчення слів"
+                          </p>
+                          <p class="card-text">
+                            Щоб пройти тестування натисніть <a href="learning.html">тут</a> 
+                            або перейдіть на вкладку "Тестування"
+                          </p>
+                          <p class="font-weight-bold">УВАГА!!!</p>
+                          <p class="card-text"> 
+                            Щоб пройти тестування на знання слів, потрібно додати слова в список "Вивчаю"
+                            на вкладці "Вивчення слів".
+                          </p>
+                          <p class="card-text">
+                            Щоб додати слово в список "Вивчаю", потрібно на картці з цим словом натиснути кнопку "Вивчаю!"
+                          </p>
+                          <p class="card-text">
+                            В список "Вивчені слова" слова додаються тільки тоді, коли Ви пройшли тестування.
+                          </p>
+                          <p class="card-text">
+                            Переглянути списки слів можна в профілі.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <img class="mt-5" src="Images/manual-book-13716287.jpg" width="100%">
+                  </div>
+              </div>
+          </div>
+      </div>
     </main>
 
     <footer class="bg-primary p-3">
