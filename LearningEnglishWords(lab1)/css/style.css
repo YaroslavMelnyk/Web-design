@@ -3,14 +3,12 @@ html, body{
 }
 
 body{
-    /*background-color: rgb(134, 231, 255);*/
     background: url(../Images/background-bleu-42.jpg) no-repeat center center fixed;
     background-size: cover;
     color: white;
     font-size: 1.2rem;
 }
 
-/*Menu*/
 .navbar{
     font-size: 1.1rem;
 }
@@ -51,10 +49,6 @@ a:hover{
 a:visited{
     color: yellowgreen;
 }
-
-/*footer{
-    display: none;
-}*/
 
 .reg-container{
     height: 100%;
