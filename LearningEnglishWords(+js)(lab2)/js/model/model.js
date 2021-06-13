@@ -15,7 +15,6 @@ export default class Model {
             "школа", "держава", "родина", "студент", 
             "група", "час", "інформація", "люди", 
             "річ", "спільнота", "чоловік", "жінка"];
-        //this.wordsForLearning();
 
         localStorage.numberactiveProfile;
         this.onOffProfile();
@@ -49,7 +48,6 @@ export default class Model {
         let password = document.getElementById("signUpPassword").value; 
         let repeadPassword = document.getElementById("signUpRepeadPassword").value; 
         if(password == repeadPassword){
-            //let profiles = JSON.parse(localStorage.getItem('profiles') || "[]");
             let profiles = this.getArrayFromLocalStore("profiles");
             let newProfile = new Profile(profiles.length, name, surname, gender, birthdate, email, password);
             this.addElementToLocalStoreArray("profiles", newProfile);
@@ -66,7 +64,6 @@ export default class Model {
         for(let i = 0; i < profiles.length; i++){
             if(profiles[i].email == email && profiles[i].password == password){
                 localStorage.numberactiveProfile = i;
-                //this.setVariableToLocalStore("activeProfile", profiles[i]);
                 inProfile = true;
                 break;
             }
@@ -105,10 +102,6 @@ export default class Model {
 
     onTestingPage(arraysWords, profile){
         if(arraysWords.arrayEngWords.length){
-            /*if(arraysWords.arrayEngWords.length <= 2){
-                arraysWords.arrayEngWords = arraysWords.arrayEngWords.concat(profile.learningEngWords);
-                arraysWords.arrayUAWords = arraysWords.arrayUAWords.concat(profile.learningUAWords);
-            }*/
             this.view.onTestingPage(arraysWords.arrayEngWords.shift(), arraysWords.arrayUAWords.shift(), this.allUAWords[this.getRandomInt(this.allUAWords.length)], 
                 this.allUAWords[this.getRandomInt(this.allUAWords.length)]);
         } else {
